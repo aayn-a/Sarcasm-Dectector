@@ -36,7 +36,7 @@ optimizer = keras.optimizers.Adam(learning_rate = 0.005)
 model.compile(optimizer = optimizer, loss = "binary_crossentropy", metrics =["accuracy"])
 model.fit(X_train, y_train, epochs=5, validation_data=(X_test, y_test), batch_size=30)
 
-
+#Test
 text1 = tf.constant(["Typhoon Rips Through Cemetery; Hundreds Dead"])
 print(model.predict(vectorizer(text1).numpy()))
 
